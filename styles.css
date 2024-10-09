@@ -1,0 +1,68 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #3c2f2f;
+    color: #e5d4c3;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #5e3d3d;
+    padding: 20px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #e5d4c3;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #d4b887;
+}
+
+.hero {
+    background-color: #5a3e3e;
+    padding: 100px 20px;
+    text-align: center;
+    background-image: url('hero-background.jpg'); /* Placeholder for a rich, wine-like background */
+    background-size: cover;
+}
+
+.hero h1 {
+    color: #fff;
+    font-size: 3rem;
+}
+
+.hero p {
+    color: #d4b887;
+    font-size: 1.2rem;
+}
+
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+footer {
+    background-color: #5e3d3d;
+    padding: 20px 0;
+    text-align: center;
+    color: #e5d4c3;
+}
