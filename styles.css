@@ -1,3 +1,6 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Open+Sans:wght@400;700&display=swap');
+
 /* Basic Reset */
 * {
     margin: 0;
@@ -6,53 +9,86 @@
 }
 
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #3c2f2f;
-    color: #e5d4c3;
-    line-height: 1.6;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f0f8ff; /* Light blue background for a fresh look */
+    color: #333; /* Dark grey text for readability */
+    margin: 0;
+    padding: 0;
 }
 
 header {
-    background-color: #5e3d3d;
-    padding: 20px 0;
+    background-color: #4caf50; /* Green background for nature */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Fredoka One', cursive;
+    font-size: 2.5em;
 }
 
+/* Main Content Styles */
+main {
+    padding: 20px;
+}
+
+h1, h2, h3 {
+    font-family: 'Fredoka One', cursive;
+    color: #4caf50; /* Green for headings */
+}
+
+p {
+    line-height: 1.6;
+}
+
+/* Navigation Styles */
 nav ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
+    list-style-type: none; /* Remove bullet points */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Use flexbox to align items horizontally */
+    justify-content: center; /* Center the items horizontally */
 }
 
-nav ul li {
-    margin: 0 15px;
+nav li {
+    margin: 0 15px; /* Add space between items */
 }
 
-nav ul li a {
+nav a {
+    color: white;
     text-decoration: none;
-    color: #e5d4c3;
     font-weight: bold;
 }
 
-nav ul li a:hover {
-    color: #d4b887;
+nav a:hover {
+    color: #ffd700; /* Yellow for a fun hover effect */
 }
 
 .hero {
     background-color: #5a3e3e;
-    padding: 100px 20px;
+    padding: 200px 20px;
     text-align: center;
-    background-image: url('hero-background.jpg'); /* Placeholder for a rich, wine-like background */
-    background-size: cover;
+    background-image: url('images/background_design_repeat.jpeg');
+    background-repeat: repeat; /* This will make the image repeat */
+    background-size: auto;
+    color: #fff;
+}
+
+.hero-content {
+    background-color: rgba(85, 85, 85, 0.5); /* Black background with 50% opacity */
+    padding: 50px;
+    border-radius: 10px; /* Optional: adds rounded corners */
+    display: inline-block; /* Shrinks the container to fit the content */
 }
 
 .hero h1 {
-    color: #fff;
-    font-size: 3rem;
+    font-family: 'Fredoka One', cursive;
+    font-size: 3em;
+    margin-bottom: 20px;
 }
 
 .hero p {
-    color: #d4b887;
-    font-size: 1.2rem;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2em;
+    line-height: 1.5;
 }
 
 section {
@@ -60,9 +96,13 @@ section {
     text-align: center;
 }
 
+/* Footer Styles */
 footer {
-    background-color: #5e3d3d;
-    padding: 20px 0;
+    background-color: #4caf50;
+    color: white;
     text-align: center;
-    color: #e5d4c3;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
 }
