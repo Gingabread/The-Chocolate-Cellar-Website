@@ -176,6 +176,79 @@ section {
     background-color: #7a3e12; /* Darker brown on hover */
 }
 
+.carousel {
+    position: relative; /* Important: Ensure the arrows are positioned relative to this container */
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Flex container for carousel items */
+.carousel-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    /* Prevent items from affecting arrow position */
+}
+
+/* Carousel item styles */
+.carousel-item {
+    min-width: 100%;
+    text-align: center;
+}
+
+    .carousel-item img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+/* Arrow buttons */
+.carousel-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1000;
+    font-size: 24px;
+    user-select: none;
+}
+
+    /* Positioning left and right arrows */
+    .carousel-arrow.left {
+        left: 10px;
+    }
+
+    .carousel-arrow.right {
+        right: 10px;
+    }
+
+/* Dots */
+.carousel-dots {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    background-color: #ddd;
+    border: none;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+    .dot.active {
+        background-color: #666;
+    }
+
+
 /* Footer Styles */
 footer {
     background-color: #4caf50;

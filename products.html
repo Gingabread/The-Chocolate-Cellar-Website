@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <title>Our Products - Chocolate Heaven</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <header>
         <nav>
@@ -22,11 +24,62 @@
     <section class="products">
         <h1>Our Products</h1>
         <p>Browse through our delicious assortment of chocolates.</p>
-        <!-- Add products here -->
+
+        <!-- Product Carousel -->
+        <div class="carousel">
+            <button class="carousel-arrow left" onclick="moveCarousel(currentIndex - 1)">&#10094;</button>
+            <div class="carousel-container">
+                <!-- Individual product items -->
+                <div class="carousel-item">
+                    <img src="./images/MilkChocBar.jpeg" alt="Milk Chocolate Bar">
+                    <p>Milk Chocolate Dream Bar</p>
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/DarkChocSeaSaltBar.jpeg" alt="Dark Chocolate Sea Salt Bar">
+                    <p>Dark Chocolate Sea Salt</p>
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/DarkChocCaramelBar.jpeg" alt="Dark Chocolate Caramel Bar">
+                    <p>Dark Chocolate Caramel Delight</p>
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/BirthdayCakeBar.jpeg" alt="Birthday Cake Bar">
+                    <p>Birthday Cake Surprise</p>
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/FluffernutterBar.jpeg" alt="Fluffernutter Bar">
+                    <p>Fluffernutter Bar</p>
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/PancakesSyrupBar.jpeg" alt="Pancakes and Syrup Bar">
+                    <p>Pancakes and Syrup Bar</p>
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/SmoresBar.jpeg" alt="S'mores Bar">
+                    <p>S'mores Bar</p>
+                </div>
+            </div>
+            <button class="carousel-arrow right" onclick="moveCarousel(currentIndex + 1)">&#10095;</button>
+            <!-- Carousel navigation dots -->
+            <div class="carousel-dots">
+                <button class="dot" onclick="moveCarousel(0)"></button>
+                <button class="dot" onclick="moveCarousel(1)"></button>
+                <button class="dot" onclick="moveCarousel(2)"></button>
+                <button class="dot" onclick="moveCarousel(3)"></button>
+                <button class="dot" onclick="moveCarousel(4)"></button>
+                <button class="dot" onclick="moveCarousel(5)"></button>
+                <button class="dot" onclick="moveCarousel(6)"></button>
+            </div>
+        </div>
+
     </section>
 
     <footer>
         <p>&copy; 2024 Chocolate Heaven. All rights reserved.</p>
     </footer>
+
+    <script src="scripts.js"></script>
 </body>
+
 </html>
+
