@@ -70,6 +70,7 @@ nav a:hover {
     background-repeat: repeat; /* This will make the image repeat */
     background-size: auto;
     color: #fff;
+    position: relative; /* Ensure the hero content is positioned correctly */
 }
 
 .hero-content {
@@ -94,6 +95,85 @@ nav a:hover {
 section {
     padding: 60px 20px;
     text-align: center;
+}
+
+/* Upcoming Creations Section Styles */
+.upcoming-creations {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #fff; /* White background for contrast */
+}
+
+.upcoming-creations h2 {
+    font-family: 'Fredoka One', cursive;
+    font-size: 2.5em;
+    color: #4caf50; /* Green for the header */
+    margin-bottom: 40px;
+}
+
+.creation-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+.creation {
+    background-color: #f0f8ff; /* Light blue background for each creation */
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    width: 30%; /* Adjust width as needed */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+    text-align: left;
+}
+
+.creation img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.creation h3 {
+    font-family: 'Fredoka One', cursive;
+    font-size: 1.5em;
+    color: #333;
+    margin-top: 15px;
+}
+
+.creation p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    color: #666;
+    line-height: 1.5;
+    margin: 15px 0;
+}
+
+.creation button {
+    background-color: #4caf50; /* Green button */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.creation button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+.all-products {
+    background-color: #8b4513; /* Brown button for all products */
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 40px;
+}
+
+.all-products:hover {
+    background-color: #7a3e12; /* Darker brown on hover */
 }
 
 /* Footer Styles */
