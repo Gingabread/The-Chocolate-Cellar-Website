@@ -16,6 +16,7 @@ body {
     padding: 0;
 }
 
+
 header {
     background-color: #4caf50; /* Green background for nature */
     color: white;
@@ -58,9 +59,9 @@ nav a {
     font-weight: bold;
 }
 
-nav a:hover {
-    color: #ffd700; /* Yellow for a fun hover effect */
-}
+    nav a:hover {
+        color: #ffd700; /* Yellow for a fun hover effect */
+    }
 
 /* Main Index Hero */
 .hero {
@@ -105,26 +106,26 @@ section {
     padding: 20px;
 }
 
-.about-hero img {
-    width: 50%;
-    height: auto;
-    object-fit: cover; /* Ensures the image covers the entire area without distortion */
-}
+    .about-hero img {
+        width: 50%;
+        height: auto;
+        object-fit: cover; /* Ensures the image covers the entire area without distortion */
+    }
 
 .about-hero-content {
     width: 50%;
     padding: 20px;
 }
 
-.about-hero-content h1 {
-    font-size: 2.5em;
-    margin: 0;
-}
+    .about-hero-content h1 {
+        font-size: 2.5em;
+        margin: 0;
+    }
 
-.about-hero-content p {
-    font-size: 1.2em;
-    line-height: 1.5;
-}
+    .about-hero-content p {
+        font-size: 1.2em;
+        line-height: 1.5;
+    }
 
 /* For About Us video player */
 .video-container {
@@ -133,21 +134,21 @@ section {
     padding: 20px;
 }
 
-.video-container img {
-    width: 50%;
-    height: auto;
-}
+    .video-container img {
+        width: 50%;
+        height: auto;
+    }
 
 .video-player {
     width: 50%;
     padding: 20px;
 }
 
-.video-player video {
-    width: 100%;
-    height: auto;
-    object-fit: cover; /* Ensures the video covers the entire area without black bars */
-}
+    .video-player video {
+        width: 100%;
+        height: auto;
+        object-fit: cover; /* Ensures the video covers the entire area without black bars */
+    }
 
 /* Upcoming Creations Section Styles */
 .upcoming-creations {
@@ -156,12 +157,12 @@ section {
     background-color: #fff; /* White background for contrast */
 }
 
-.upcoming-creations h2 {
-    font-family: 'Fredoka One', cursive;
-    font-size: 2.5em;
-    color: #4caf50; /* Green for the header */
-    margin-bottom: 40px;
-}
+    .upcoming-creations h2 {
+        font-family: 'Fredoka One', cursive;
+        font-size: 2.5em;
+        color: #4caf50; /* Green for the header */
+        margin-bottom: 40px;
+    }
 
 .creation-container {
     display: flex;
@@ -179,41 +180,41 @@ section {
     text-align: left;
 }
 
-.creation img {
-    width: 100%;
-    border-radius: 10px;
-}
+    .creation img {
+        width: 100%;
+        border-radius: 10px;
+    }
 
-.creation h3 {
-    font-family: 'Fredoka One', cursive;
-    font-size: 1.5em;
-    color: #333;
-    margin-top: 15px;
-}
+    .creation h3 {
+        font-family: 'Fredoka One', cursive;
+        font-size: 1.5em;
+        color: #333;
+        margin-top: 15px;
+    }
 
-.creation p {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1em;
-    color: #666;
-    line-height: 1.5;
-    margin: 15px 0;
-}
+    .creation p {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1em;
+        color: #666;
+        line-height: 1.5;
+        margin: 15px 0;
+    }
 
-.creation button {
-    background-color: #4caf50; /* Green button */
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 1em;
-    border-radius: 5px;
-    cursor: pointer;
-    text-decoration: none; /* Remove underline from link */
-    display: inline-block; /* Ensure it behaves like a button */
-}
+    .creation button {
+        background-color: #4caf50; /* Green button */
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 1em;
+        border-radius: 5px;
+        cursor: pointer;
+        text-decoration: none; /* Remove underline from link */
+        display: inline-block; /* Ensure it behaves like a button */
+    }
 
-.creation button:hover {
-    background-color: #45a049; /* Darker green on hover */
-}
+        .creation button:hover {
+            background-color: #45a049; /* Darker green on hover */
+        }
 
 .all-products {
     background-color: #8b4513; /* Brown button for all products */
@@ -228,9 +229,9 @@ section {
     display: inline-block; /* Ensure it behaves like a button */
 }
 
-.all-products:hover {
-    background-color: #7a3e12; /* Darker brown on hover */
-}
+    .all-products:hover {
+        background-color: #7a3e12; /* Darker brown on hover */
+    }
 
 .carousel {
     position: relative; /* Important: Ensure the arrows are positioned relative to this container */
@@ -328,4 +329,63 @@ footer {
         width: 100%; /* Full width for mobile devices */
         margin: 10px 0; /* Adjust margin for better spacing */
     }
+}
+
+
+
+/* Overlay to display the animation */
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(211,211,211,0.9);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Hide main content until animation is finished */
+#main-content {
+    height: 100vh;
+    overflow-y: auto; /* Enable scrolling for the main content */
+}
+
+/* Animation container */
+#animation-container {
+    position: relative;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    text-align: center;
+}
+
+/* Frame styles */
+.frame {
+    display: none;
+    width: 100vw; /* Full viewport width */
+    height: 100vh; /* Full viewport height */
+    object-fit: cover; /* Ensures the image scales to cover the screen */
+}
+
+    /* Make the first frame visible by default */
+    .frame:first-child {
+        display: block;
+    }
+
+/* Text on overlay */
+#overlay-text {
+    position: absolute;
+    top: 5%; /* Position the text 10% from the top */
+    left: 50%;
+    transform: translateX(-50%); /* Center the text horizontally */
+    font-family: 'Fredoka One', cursive;
+    font-size: 3em;
+    color: #333; /* Dark grey text for readability */
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.7); /* Light background with some transparency */
+    padding: 20px;
+    border-radius: 10px; /* Optional: adds rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
 }

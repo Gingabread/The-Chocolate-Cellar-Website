@@ -1,5 +1,6 @@
 let currentIndex = 0;
 
+// Carousel function
 function moveCarousel(index) {
     const container = document.querySelector('.carousel-container');
     const items = document.querySelectorAll('.carousel-item');
@@ -24,7 +25,7 @@ function moveCarousel(index) {
     dots[currentIndex].classList.add('active');
 }
 
-// Set initial active dot
+// Set initial active dot for carousel
 document.addEventListener('DOMContentLoaded', () => {
     document.querySelector('.dot').classList.add('active');
 });
